@@ -1,17 +1,26 @@
 {
   "name": "react-fame",
   "version": "0.1.0",
+  "description": "Demonstration of shareable React components by Harald Rudell",
   "private": true,
   "dependencies": {
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1"
+    "react-scripts": "2.1.1",
+    "styled-components": "^4.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "npm-run-all --serial localfonts start:s",
+    "start:s": "react-scripts start",
+    "build": "npm-run-all --serial onlinefonts build:b",
+    "build:b": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "localfonts": "node --experimental-modules --no-warnings scripts/linkfonts yes",
+    "onlinefonts": "node --experimental-modules --no-warnings scripts/linkfonts no",
+    "eject": "react-scripts eject",
+    "pub": "npm-run-all --serial pub:build test pub:yarn",
+    "pub:build": "react-rollup",
+    "pub:yarn": "preplib publish"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -21,5 +30,10 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "lib-create-react-app": "^0.1.1",
+    "npm-run-all": "^4.1.5",
+    "react-rollup": "^0.0.6"
+  }
 }
