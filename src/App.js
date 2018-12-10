@@ -67,6 +67,7 @@ padding-top: 10vh
 export default () => {
   const [play, setPlay] = useState(false)
   const togglePlay = e => e.preventDefault() + setPlay(!play)
+  const resetPlay = () => setPlay(false)
 
   return <Margin>
     <GlobalStyle />
@@ -84,6 +85,6 @@ export default () => {
       This is a demonstration of <a href="https://github.com/haraldrudell/lib-create-react-app">lib-create-react-app</a>
       </div>
     </TheText>
-    {play && <Play />}
+    {play && <Play onFinished={resetPlay} />}
   </Margin>
 }

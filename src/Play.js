@@ -5,8 +5,9 @@ This source code is licensed under the ISC-style license found in the LICENSE fi
 import React from 'react'
 import Sound from 'react-sound'
 
-export default () =>
+export default ({onFinished}) =>
   <Sound
     url='./Fame.mp3'
     playStatus={Sound.status.PLAYING}
+    onFinishedPlaying={onFinished}
   />
