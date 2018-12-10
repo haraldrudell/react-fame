@@ -66,7 +66,7 @@ padding-top: 10vh
 `
 export default () => {
   const [play, setPlay] = useState(false)
-  const togglePlay = () => setPlay(!play)
+  const togglePlay = e => e.preventDefault() + setPlay(!play)
 
   return <Margin>
     <GlobalStyle />
