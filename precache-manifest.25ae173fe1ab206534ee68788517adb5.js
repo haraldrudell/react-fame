@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "2385d9190f2f3ef93a9c",
+    "revision": "c7b727d35044c102534a",
     "url": "/react-fame/static/css/main.858f9046.chunk.css"
   },
   {
-    "revision": "2385d9190f2f3ef93a9c",
-    "url": "/react-fame/static/js/main.2385d919.chunk.js"
+    "revision": "c7b727d35044c102534a",
+    "url": "/react-fame/static/js/main.c7b727d3.chunk.js"
   },
   {
     "revision": "672f6e57b7e3eb2426d8",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/react-fame/static/media/Blade+Runner.00c8e4b0.ttf"
   },
   {
-    "revision": "777d03fdd13acfe9a9c577f2fce0427e",
+    "revision": "993756048c2ecd3fee1784c1119bcffd",
     "url": "/react-fame/index.html"
   }
 ];
