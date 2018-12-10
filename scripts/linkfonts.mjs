@@ -7,7 +7,7 @@ import fs from 'fs-extra'
 import path from 'path'
 
 const project = {
-  dir: path.join('src'),
+  dir: path.resolve('src'),
   symlink: 'fonts.css',
   projectLink: 'fonts/fonts.css',
   onlineLink: 'fonts/fontsonline.css',
@@ -22,7 +22,7 @@ async function run({arg, dir, symlink, onlineLink, projectLink}) {
   const action = arg === 'yes' ? true : arg === 'no' ? false : undefined
   if (action === undefined) throw new Error('Please provide argument \'yes\' or \'no\'')
 
-  const target = action ? projectLink : onlineLink
+  const target = path.join(dir, action ? projectLink : onlineLink)
   const dst = path.join(dir, symlink)
   await fs.remove(dst)
   return fs.symlink(target, dst)

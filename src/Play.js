@@ -3,8 +3,10 @@
 This source code is licensed under the ISC-style license found in the LICENSE file in the root directory of this source tree.
 */
 import React from 'react'
-import ReactDOM from 'react-dom'
-import './index.css'
-import App from './App'
+import Sound from 'react-sound'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+export default () =>
+  <Sound
+    url='./Fame.mp3'
+    playStatus={Sound.status.PLAYING}
+  />

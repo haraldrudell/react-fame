@@ -4,9 +4,10 @@
   "description": "Demonstration of shareable React components by Harald Rudell",
   "private": true,
   "dependencies": {
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2",
     "react-scripts": "2.1.1",
+    "react-sound": "^1.2.0",
     "styled-components": "^4.1.2"
   },
   "scripts": {
@@ -14,6 +15,7 @@
     "start:s": "react-scripts start",
     "build": "npm-run-all --serial onlinefonts build:b",
     "build:b": "react-scripts build",
+    "deploy": "gh-pages --dist build --depth 3",
     "test": "react-scripts test",
     "localfonts": "node --experimental-modules --no-warnings scripts/linkfonts yes",
     "onlinefonts": "node --experimental-modules --no-warnings scripts/linkfonts no",
@@ -22,6 +24,7 @@
     "pub:build": "react-rollup",
     "pub:yarn": "preplib publish"
   },
+  "homepage": "https://haraldrudell.github.io/react-fame",
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -32,6 +35,8 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "fs-extra": "^7.0.1",
+    "gh-pages": "^2.0.1",
     "lib-create-react-app": "^0.1.1",
     "npm-run-all": "^4.1.5",
     "react-rollup": "^0.0.6"

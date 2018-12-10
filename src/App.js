@@ -2,10 +2,11 @@
 © 2018-present Harald Rudell <harald.rudell@gmail.com> (http://www.haraldrudell.com)
 This source code is licensed under the ISC-style license found in the LICENSE file in the root directory of this source tree.
 */
-import React from 'react'
+import React, { useState } from 'react'
 import styled, { keyframes, createGlobalStyle } from 'styled-components'
 import './fonts.css'
 import './fonts/bladeRunner.css'
+import Play from './Play'
 
 const GlobalStyle = createGlobalStyle`
 body, html {
@@ -38,6 +39,8 @@ div:nth-child(1) {
   color: red;
   margin-bottom: 10vh;
   text-shadow: 0px 1px 4px #23430C;
+  text-align: center;
+  cursor: pointer;
 }
 div:nth-child(2) {
   font: bolder 50pt Arial;
@@ -56,11 +59,14 @@ div {
 const Margin = styled.div`
 padding-top: 10vh
 `
-export default () =>
-  <Margin>
+export default () => {
+  const [play, setPlay] = useState(false)
+  const togglePlay = () => setPlay(!play)
+
+  return <Margin>
     <GlobalStyle />
     <TheText>
-      <div>
+      <div onClick={togglePlay}>
         react<br/>
         fame
       </div>
@@ -68,5 +74,8 @@ export default () =>
       <div>Harald Rudell</div>
       <div>Node Go React Java</div>
       <div>harald.rudell@gmail.com</div>
+      <div>[ click REACT FAME for Irene Cara 1980 ]</div>
     </TheText>
+    {play && <Play />}
   </Margin>
+}
