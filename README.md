@@ -1,5 +1,9 @@
 # React-Fame
 
+The project hacked together while making the below video
+
+Live at: https://github.com/haraldrudell/react-fame
+
 A publicly shared library of React components created using [Lib Create React App](https://github.com/haraldrudell/lib-create-react-app)
 
 [click for **Video presentation**, 10 min](https://youtu.be/KVaOVjiH2SQ)
