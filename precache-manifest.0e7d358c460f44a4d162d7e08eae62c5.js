@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/react-fame/static/media/Blade+Runner.00c8e4b0.ttf"
   },
   {
-    "revision": "4982d19c6e1d5db835104cb0a75f09be",
+    "revision": "777d03fdd13acfe9a9c577f2fce0427e",
     "url": "/react-fame/index.html"
   }
 ];
