@@ -52,6 +52,11 @@ div:nth-child(3), div:nth-child(5) {
 div:nth-child(4) {
   font: bolder 32pt Arial;
 }
+div:nth-child(6) a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
 div {
   margin-bottom: 24px;
 }
@@ -74,7 +79,10 @@ export default () => {
       <div>Harald Rudell</div>
       <div>Node Go React Java</div>
       <div>harald.rudell@gmail.com</div>
-      <div>[ click REACT FAME for Irene Cara 1980 ]</div>
+      <div>[ click REACT FAME for Irene Cara 1980 ]<br />
+      This project was created in <a href="https://youtu.be/KVaOVjiH2SQ">this video</a><br />
+      This is a demonstration of <a href="https://github.com/haraldrudell/lib-create-react-app">lib-create-react-app</a>
+      </div>
     </TheText>
     {play && <Play />}
   </Margin>
