@@ -1,7 +1,8 @@
 {
   "name": "react-fame",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A library developed using lib-create-react-app",
+  "author": "Harald Rudell <harald.rudell@gmail.com> (http://haraldrudell.com)",
   "license": "ISC",
   "main": "lib/cjs.js",
   "module": "lib/esm.js",
@@ -13,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/haraldrudell/react-rollup"
+    "url": "https://github.com/haraldrudell/react-fame.git"
   },
   "peerDependencies": {
     "react": ">=16.7",
