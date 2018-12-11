@@ -1,4 +1,5 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# © 2018-present Harald Rudell <harald.rudell@gmail.com> (http://www.haraldrudell.com)
+# This source code is licensed under the ISC-style license found in the LICENSE file in the root directory of this source tree.
 
 # dependencies
 /node_modules
@@ -23,3 +24,5 @@ yarn-debug.log*
 yarn-error.log*
 
 /src/fonts.css
+
+/tmp
