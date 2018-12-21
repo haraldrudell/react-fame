@@ -13,7 +13,7 @@
     "localfonts": "node --experimental-modules --no-warnings scripts/linkfonts yes",
     "onlinefonts": "node --experimental-modules --no-warnings scripts/linkfonts no",
     "eject": "react-scripts eject",
-    "babel": "es2049scripts -active babel .",
+    "dobabel": "es2049scripts -active babel .",
     "pub": "npm-run-all --serial pub:build test pub:yarn",
     "pub:build": "react-rollup",
     "pub:yarn": "preplib publish",
@@ -31,9 +31,9 @@
     "not op_mini all"
   ],
   "dependencies": {
-    "react": "16.7.0-alpha.2",
-    "react-dom": "16.7.0-alpha.2",
-    "react-scripts": "2.1.1",
+    "react": "^16.7",
+    "react-dom": "^16.7",
+    "react-scripts-port0": "^2.1.2",
     "react-sound": "^1.2.0",
     "styled-components": "^4.1.2"
   },
@@ -48,6 +48,6 @@
     "jest": "^23.6.0",
     "lib-create-react-app": "^0.1.4",
     "npm-run-all": "^4.1.5",
-    "react-rollup": "^0.0.14"
+    "react-rollup": "^0.0.15"
   }
 }

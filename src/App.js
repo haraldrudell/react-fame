@@ -2,8 +2,8 @@
 © 2018-present Harald Rudell <harald.rudell@gmail.com> (http://www.haraldrudell.com)
 This source code is licensed under the ISC-style license found in the LICENSE file in the root directory of this source tree.
 */
-import React, { useState } from 'react'
-import styled, { keyframes, createGlobalStyle } from 'styled-components'
+import React, {memo, useState} from 'react'
+import styled, {keyframes, createGlobalStyle} from 'styled-components'
 import './fonts.css'
 import './fonts/bladeRunner.css'
 import Play from './Play'
@@ -64,11 +64,10 @@ div {
 const Margin = styled.div`
 padding-top: 10vh
 `
-export default () => {
+export default memo(() => {
   const [play, setPlay] = useState(false)
   const togglePlay = e => e.preventDefault() + setPlay(!play)
   const resetPlay = () => setPlay(false)
-
   return <Margin>
     <GlobalStyle />
     <TheText>
@@ -87,4 +86,4 @@ export default () => {
     </TheText>
     {play && <Play onFinished={resetPlay} />}
   </Margin>
-}
+})
