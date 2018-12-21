@@ -5,22 +5,7 @@
   "author": "Harald Rudell <harald.rudell@gmail.com> (http://haraldrudell.com)",
   "private": true,
   "scripts": {
-    "start": "npm-run-all --serial localfonts start:s",
-    "start:s": "react-scripts start",
-    "build": "npm-run-all --serial onlinefonts build:b",
-    "build:b": "react-scripts build",
-    "deploy": "gh-pages --dist build --depth 3",
-    "localfonts": "node --experimental-modules --no-warnings scripts/linkfonts yes",
-    "onlinefonts": "node --experimental-modules --no-warnings scripts/linkfonts no",
-    "eject": "react-scripts eject",
-    "dobabel": "es2049scripts -active babel .",
-    "pub": "npm-run-all --serial pub:build test pub:yarn",
-    "pub:build": "react-rollup",
-    "pub:yarn": "preplib publish",
-    "testnpm": "jest --testRegex '.*' src/installFromNpm.itest.js",
-    "test": "npm-run-all --serial 'test:*'",
-    "test:clean": "rimraf tmp",
-    "test:tesrt": "react-scripts test"
+    "test": "react-scripts test --all"
   },
   "homepage": "https://haraldrudell.github.io/react-fame",
   "eslintConfig": {
