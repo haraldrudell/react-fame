@@ -1,6 +1,6 @@
 {
   "name": "react-fame",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A library developed using lib-create-react-app",
   "author": "Harald Rudell <harald.rudell@gmail.com> (http://haraldrudell.com)",
   "license": "ISC",
@@ -17,8 +17,8 @@
     "url": "https://github.com/haraldrudell/react-fame.git"
   },
   "peerDependencies": {
-    "react": ">=16.7",
-    "react-dom": ">=16.7"
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2"
   },
   "dependencies": {
     "react-sound": "^1.2.0",
