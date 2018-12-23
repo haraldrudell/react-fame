@@ -18,9 +18,10 @@
     "pub:build": "react-rollup",
     "pub:yarn": "preplib publish",
     "testnpm": "jest --testRegex '.*' src/installFromNpm.itest.js",
+    "testfs": "jest --testRegex '.*' src/installFs.itest.js",
     "test": "npm-run-all --serial 'test:*'",
     "test:clean": "rimraf tmp",
-    "test:tesrt": "react-scripts test"
+    "test:test": "react-scripts test"
   },
   "homepage": "https://haraldrudell.github.io/react-fame",
   "eslintConfig": {

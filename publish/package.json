@@ -17,8 +17,8 @@
     "url": "https://github.com/haraldrudell/react-fame.git"
   },
   "peerDependencies": {
-    "react": "^16.7.0-alpha.2",
-    "react-dom": "^16.7.0-alpha.2"
+    "react": "=next",
+    "react-dom": "=next"
   },
   "dependencies": {
     "react-sound": "^1.2.0",
